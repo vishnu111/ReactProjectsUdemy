@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.pre-game {
+  padding: 10px;
+}
+.pig-game {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1110px;
+  height: 50.6rem;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  align-items: center;
+  justify-content: center;
+}
+.game-intro p,
+.game-intro .game-btn-all {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.player {
+  flex: 50%;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+.name {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: auto;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.pig-game .current {
+  background-color: #c7365f;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.pig-game .current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+.pig-game .current-score {
+  font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.pig-game .btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.pig-game .btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.pig-game .btn--new {
+  top: 4rem;
+}
+.pig-game .btn--roll {
+  top: 39.3rem;
+}
+.pig-game .btn--hold {
+  top: 46.1rem;
+}
+
+.pig-game .btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.pig-game .btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+.hidden {
+  display: none;
+}
+.game-section {
+  padding: 0px;
+}
+.player_name {
+  font-size: 16px;
+}
+@media screen and (max-width: 743px) {
+  .pig-game {
+    height: 49.6rem;
+  }
+  .pig-game .current {
+    padding: 1rem;
+  }
+  .pig-game .current-label {
+    font-size: 1rem;
+  }
+  .player--active {
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 809px) {
+  .pig-game .btn {
+    font-size: 1rem;
+    display: flex;
+  }
+  .player {
+    padding: 15px;
+  }
+  .dice {
+    height: 4rem;
+  }
+  .score {
+    font-size: 6rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+}
+
+.calculator input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.calculator input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
