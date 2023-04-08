@@ -1,30 +1,38 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
+      "name": "Dr. Woodrow Abbott",
+      "id": 8
     },
     {
-      "name": "Miss Harriet Maggio",
-      "id": 2
+      "name": "Bernice Barrows",
+      "id": 10
     },
     {
-      "name": "Melinda O'Connell",
-      "id": 3
+      "name": "Inez Harber",
+      "id": 12
     },
     {
-      "name": "Stewart Jast",
-      "id": 4
-    },
-    {
-      "name": "Sylvester Harris",
-      "id": 5
-    },
-    {
-      "name": "Dixie Schinner",
-      "id": 6
+      "name": "Karen Powlowski",
+      "id": 13
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "userId": 8,
+      "title": "Fantastic Concrete Fish",
+      "id": 13
+    },
+    {
+      "userId": 8,
+      "title": "Handmade Concrete Cheese",
+      "id": 14
+    },
+    {
+      "userId": 8,
+      "title": "Gorgeous Granite Chicken",
+      "id": 15
+    }
+  ],
   "photos": []
 }
